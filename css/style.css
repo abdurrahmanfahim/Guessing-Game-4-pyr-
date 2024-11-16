@@ -1,0 +1,186 @@
+/* General Reset */
+body,
+h1,
+h2,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+hr {
+  margin: 2px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.instructions {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+
+.game-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.player {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#player1 {
+    outline: #ff6b6b46 1px solid;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.chances {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background: #ff4b4b;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.6rem;
+  visibility: hidden;
+  margin-bottom: 1rem;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+#check-winner {
+  background: #27ae60;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+}
+
+#check-winner:hover {
+  background: #2ecc71;
+}
+
+#winner {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* result-screen */
+
+.result-screen {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  display: none;
+}
+
+.result-screen h1 {
+  font-size: 2rem;
+  color: #27ae60;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.winner-details h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.winner-details p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.winner-details strong {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+#play-again {
+  margin-top: 20px;
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#play-again:hover {
+  background: #3498db;
+}

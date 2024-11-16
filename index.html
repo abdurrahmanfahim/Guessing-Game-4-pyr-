@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="game">
+
+            <h1>Number Guessing Game</h1>
+    
+            <p class="instructions">Guess a number between 1 and 9. Each player has 5 chances!</p>
+    
+            <div class="game-board">
+    
+                <!-- Player 1 -->
+                <div class="player" id="player1">
+    
+                    <h2>Player 1</h2>
+    
+                    <p class="chances" id="chances-player1">Throw a number</p>
+    
+                    <input type="password" class="guess-input" id="input-player1" placeholder="Enter your Secret Number">
+    
+                    <p class="error-message" id="error-player1"></p>
+                    
+                    <button class="submit-btn" id="submit-player1">Submit</button>
+    
+                </div>
+    
+                <!-- Player 2 -->
+                <div class="player" id="player2">
+                    <h2>Player 2</h2>
+                    <p class="chances" id="chances-player2">Chances Left: <span class="count2">5</span></p>
+                    <input type="password" class="guess-input" id="input-player2" placeholder="Enter your guess" disabled>
+                    <p class="error-message" id="error-player2"></p>
+                    <button class="submit-btn" id="submit-player2" disabled>Submit</button>
+                </div>
+    
+                <!-- Player 3 -->
+                <div class="player" id="player3">
+                    <h2>Player 3</h2>
+                    <p class="chances" id="chances-player3">Chances Left: <span class="count3">5</span></p>
+                    <input type="password" class="guess-input" id="input-player3" placeholder="Enter your guess" disabled>
+                    <p class="error-message" id="error-player3"></p>
+                    <button class="submit-btn" id="submit-player3" disabled>Submit</button>
+                </div>
+    
+                <!-- Player 4 -->
+                <div class="player" id="player4">
+                    <h2>Player 4</h2>
+                    <p class="chances" id="chances-player4">Chances Left: <span class="count4">5</span></p>
+                    <input type="password" class="guess-input" id="input-player4" placeholder="Enter your guess" disabled>
+                    <p class="error-message" id="error-player4"></p>
+                    <button class="submit-btn" id="submit-player4" disabled>Submit</button>
+                </div>
+    
+            </div>
+    
+    
+            <div class="result">
+    
+                <button id="check-winner" disabled>Check Winner</button>
+    
+            </div>
+
+        </div>
+
+
+
+        <div class="result-screen">
+
+            <h1></h1>
+
+            <div class="winner-details">
+
+                <h3>
+                    <ul>
+                        <li class="annous1"></li><hr>
+                        <li class="annous2"></li><hr>
+                        <li class="annous3"></li><hr>
+                        <li class="annous4"></li>
+                    </ul>
+                </h3>
+                <p>The Number was: <strong class="was"></strong></p>
+
+            </div>
+
+            <button id="play-again" onclick="document.location.reload()">Play Again</button>
+
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
