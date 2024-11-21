@@ -11,7 +11,8 @@ button {
   user-select: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 
